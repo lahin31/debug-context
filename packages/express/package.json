@@ -1,6 +1,6 @@
 {
   "name": "@lahin31/debugcontext-express",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Express.js adapter for DebugContext — automatically captures request context, redacts sensitive data, and structures every route error as a debuggable Incident.",
   "keywords": [
     "debugcontext",
