@@ -1,6 +1,6 @@
 {
   "name": "debugcontext-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "DebugContext monorepo - Zero-configuration debugging SDK for Node.js",
   "workspaces": [
@@ -12,10 +12,16 @@
     "test": "npm run test --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "release": "standard-version && git push --follow-tags",
+    "publish": "npm publish",
+    "release:patch": "standard-version --release-as patch && git push --follow-tags && npm publish",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags && npm publish",
+    "release:major": "standard-version --release-as major && git push --follow-tags && npm publish"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "standard-version": "^9.5.0",
     "typescript": "^5.4.0"
   },
   "engines": {
