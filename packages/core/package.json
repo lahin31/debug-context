@@ -1,5 +1,5 @@
 {
-  "name": "@debugcontext/core",
+  "name": "@lahin31/debugcontext-core",
   "version": "0.1.0",
   "description": "Zero-configuration debugging context SDK for Node.js",
   "keywords": [

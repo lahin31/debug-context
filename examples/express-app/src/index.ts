@@ -25,8 +25,8 @@
  *   curl http://localhost:3000/manual
  */
 
-import DebugContext from "@debugcontext/core";
-import DebugContextExpress from "@debugcontext/express";
+import DebugContext from "@lahin31/debugcontext-core";
+import DebugContextExpress from "@lahin31/debugcontext-express";
 import express, { type NextFunction, type Request, type Response } from "express";
 import {
   AppError,

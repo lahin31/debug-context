@@ -1,17 +1,17 @@
-# @debugcontext/core
+# @lahin31/debugcontext-core
 
 Framework-agnostic core SDK for [DebugContext](../../README.md).
 
 ## Install
 
 ```bash
-npm install @debugcontext/core
+npm install @lahin31/debugcontext-core
 ```
 
 ## Usage
 
 ```typescript
-import DebugContext from '@debugcontext/core';
+import DebugContext from '@lahin31/debugcontext-core';
 
 DebugContext.init();
 
@@ -29,9 +29,9 @@ try {
 ## Tree-shakable named exports
 
 ```typescript
-import { init, capture, toJSON, toConsole } from '@debugcontext/core';
-import { collectRuntime, collectSystem, collectGit } from '@debugcontext/core';
-import { redactHeaders, redactBody } from '@debugcontext/core';
+import { init, capture, toJSON, toConsole } from '@lahin31/debugcontext-core';
+import { collectRuntime, collectSystem, collectGit } from '@lahin31/debugcontext-core';
+import { redactHeaders, redactBody } from '@lahin31/debugcontext-core';
 ```
 
 See the [root README](../../README.md) for full API documentation.

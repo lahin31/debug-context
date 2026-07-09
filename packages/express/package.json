@@ -1,5 +1,5 @@
 {
-  "name": "@debugcontext/express",
+  "name": "@lahin31/debugcontext-express",
   "version": "0.1.0",
   "description": "Express.js adapter for DebugContext — automatic error capture middleware",
   "keywords": [
@@ -47,7 +47,7 @@
     "clean": "rm -rf dist coverage"
   },
   "dependencies": {
-    "@debugcontext/core": "*"
+    "@lahin31/debugcontext-core": "*"
   },
   "peerDependencies": {
     "express": ">=4.0.0"

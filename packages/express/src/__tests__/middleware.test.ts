@@ -1,4 +1,4 @@
-import DebugContext from "@debugcontext/core";
+import DebugContext from "@lahin31/debugcontext-core";
 import express, { type Application } from "express";
 import request from "supertest";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
@@ -78,7 +78,7 @@ describe("errorMiddleware", () => {
     await new Promise((r) => setTimeout(r, 20)); // wait for async hook
 
     expect(hook).toHaveBeenCalledTimes(1);
-    const [incident] = hook.mock.calls[0] as [import("@debugcontext/core").Incident];
+    const [incident] = hook.mock.calls[0] as [import("@lahin31/debugcontext-core").Incident];
     expect(incident.error.message).toBe("route exploded");
     expect(incident.request?.method).toBe("GET");
     expect(incident.request?.url).toBe("/boom");
@@ -93,7 +93,7 @@ describe("errorMiddleware", () => {
     await new Promise((r) => setTimeout(r, 20));
 
     expect(hook).toHaveBeenCalledTimes(1);
-    const [incident] = hook.mock.calls[0] as [import("@debugcontext/core").Incident];
+    const [incident] = hook.mock.calls[0] as [import("@lahin31/debugcontext-core").Incident];
     expect(incident.error.message).toBe("async route exploded");
   });
 
@@ -105,7 +105,7 @@ describe("errorMiddleware", () => {
   });
 
   it("attaches the incident to req.debugContextIncident", async () => {
-    let capturedIncident: import("@debugcontext/core").Incident | undefined;
+    let capturedIncident: import("@lahin31/debugcontext-core").Incident | undefined;
 
     const app = express();
     app.use(express.json());
@@ -151,7 +151,7 @@ describe("request context extraction", () => {
 
     await new Promise((r) => setTimeout(r, 20));
 
-    const [incident] = hook.mock.calls[0] as [import("@debugcontext/core").Incident];
+    const [incident] = hook.mock.calls[0] as [import("@lahin31/debugcontext-core").Incident];
     expect(incident.request?.headers["authorization"]).toBe("[REDACTED]");
   });
 
@@ -166,7 +166,7 @@ describe("request context extraction", () => {
 
     await new Promise((r) => setTimeout(r, 20));
 
-    const [incident] = hook.mock.calls[0] as [import("@debugcontext/core").Incident];
+    const [incident] = hook.mock.calls[0] as [import("@lahin31/debugcontext-core").Incident];
     const body = incident.request?.body as { username: string; password: string };
     expect(body.password).toBe("[REDACTED]");
     expect(body.username).toBe("alice");
@@ -193,7 +193,7 @@ describe("request context extraction", () => {
     await new Promise((r) => setTimeout(r, 50));
 
     expect(hook).toHaveBeenCalledTimes(1);
-    const [incident] = hook.mock.calls[0] as [import("@debugcontext/core").Incident];
+    const [incident] = hook.mock.calls[0] as [import("@lahin31/debugcontext-core").Incident];
     expect(incident.request?.params["id"]).toBe("42");
   });
 });

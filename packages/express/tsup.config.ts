@@ -10,5 +10,5 @@ export default defineConfig({
   splitting: false,
   platform: "node",
   target: "node20",
-  external: ["express", "@debugcontext/core"],
+  external: ["express", "@lahin31/debugcontext-core"],
 });

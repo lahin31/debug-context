@@ -1,13 +1,13 @@
 /**
- * @debugcontext/express
+ * @lahin31/debugcontext-express
  *
  * Express.js adapter for DebugContext.
  *
  * @example
  * ```ts
  * import express from 'express';
- * import DebugContext from '@debugcontext/core';
- * import DebugContextExpress from '@debugcontext/express';
+ * import DebugContext from '@lahin31/debugcontext-core';
+ * import DebugContextExpress from '@lahin31/debugcontext-express';
  *
  * const app = express();
  *

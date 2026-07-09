@@ -2,7 +2,7 @@
  * @module middleware
  * Express error-handling and request-tagging middleware for DebugContext.
  */
-import DebugContext, { type Incident } from "@debugcontext/core";
+import DebugContext, { type Incident } from "@lahin31/debugcontext-core";
 import type {
   ErrorRequestHandler,
   NextFunction,

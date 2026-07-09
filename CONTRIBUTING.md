@@ -9,8 +9,8 @@ Thanks for your interest in contributing. This document covers everything you ne
 ```
 debugcontext/
 ├── packages/
-│   ├── core/        @debugcontext/core  — framework-agnostic SDK
-│   └── express/     @debugcontext/express — Express adapter
+│   ├── core/        @lahin31/debugcontext-core  — framework-agnostic SDK
+│   └── express/     @lahin31/debugcontext-express — Express adapter
 ├── examples/
 │   └── express-app/ — runnable demo application
 ├── .github/
@@ -79,7 +79,7 @@ npm run typecheck
 1. Create a new package under `packages/` — e.g. `packages/fastify`
 2. Copy the structure from `packages/express` as a starting point
 3. The adapter must:
-   - Depend on `@debugcontext/core`
+   - Depend on `@lahin31/debugcontext-core`
    - Peer-depend on the target framework
    - Export a middleware / plugin that calls `DebugContext.capture(err, requestCtx)` with a populated `RequestContext`
    - Re-export `extractRequest` or an equivalent helper

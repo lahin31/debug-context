@@ -10,8 +10,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@debugcontext/core": "*",
-    "@debugcontext/express": "*",
+    "@lahin31/debugcontext-core": "*",
+    "@lahin31/debugcontext-express": "*",
     "express": "^4.18.0"
   },
   "devDependencies": {

@@ -12,8 +12,8 @@ When your application throws, DebugContext automatically captures everything you
 
 | Package | Version | Description |
 |---|---|---|
-| [`@debugcontext/core`](./packages/core) | 0.1.0 | Framework-agnostic core SDK |
-| [`@debugcontext/express`](./packages/express) | 0.1.0 | Express 4/5 middleware adapter |
+| [`@lahin31/debugcontext-core`](./packages/core) | 0.1.0 | Framework-agnostic core SDK |
+| [`@lahin31/debugcontext-express`](./packages/express) | 0.1.0 | Express 4/5 middleware adapter |
 
 ---
 
@@ -22,15 +22,15 @@ When your application throws, DebugContext automatically captures everything you
 ### Install
 
 ```bash
-npm install @debugcontext/core @debugcontext/express
+npm install @lahin31/debugcontext-core @lahin31/debugcontext-express
 ```
 
 ### Setup (Express)
 
 ```typescript
 import express from 'express';
-import DebugContext from '@debugcontext/core';
-import DebugContextExpress from '@debugcontext/express';
+import DebugContext from '@lahin31/debugcontext-core';
+import DebugContextExpress from '@lahin31/debugcontext-express';
 
 // 1. Initialise once at startup
 DebugContext.init();
@@ -192,7 +192,7 @@ All values are replaced with `"[REDACTED]"`. Add extra names via `init()` option
 - **Tree-shakable** — all exports are named; unused collectors are dropped by bundlers.
 - **No external dependencies** — only Node.js built-ins (`crypto`, `os`, `child_process`).
 - **No cloud, no database** — incidents are plain JavaScript objects. Ship them anywhere you want.
-- **Modular adapters** — `@debugcontext/core` is framework-agnostic. Adapters (`@debugcontext/express`, and future `@debugcontext/fastify`, `@debugcontext/nestjs`) are separate packages.
+- **Modular adapters** — `@lahin31/debugcontext-core` is framework-agnostic. Adapters (`@lahin31/debugcontext-express`, and future `@debugcontext/fastify`, `@debugcontext/nestjs`) are separate packages.
 
 ---
 

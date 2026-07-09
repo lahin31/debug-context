@@ -7,7 +7,7 @@ import {
   redactBody,
   redactHeaders,
   type RequestContext,
-} from "@debugcontext/core";
+} from "@lahin31/debugcontext-core";
 import type { Request } from "express";
 
 // ---------------------------------------------------------------------------
