@@ -1,22 +1,36 @@
 {
   "name": "@lahin31/debugcontext-core",
   "version": "0.1.0",
-  "description": "Zero-configuration debugging context SDK for Node.js",
+  "description": "Zero-configuration debugging context SDK for Node.js — automatically captures request, runtime, system, git, and error context on every thrown error.",
   "keywords": [
     "debugging",
     "error",
-    "context",
+    "error-context",
     "incident",
     "nodejs",
-    "typescript"
+    "typescript",
+    "sdk",
+    "express",
+    "zero-config",
+    "developer-tools",
+    "observability",
+    "stack-trace",
+    "request-context"
   ],
-  "author": "DebugContext Contributors",
+  "author": {
+    "name": "lahin31",
+    "url": "https://github.com/lahin31"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/debugcontext/debugcontext",
+    "url": "git+https://github.com/lahin31/debugcontext.git",
     "directory": "packages/core"
   },
+  "bugs": {
+    "url": "https://github.com/lahin31/debugcontext/issues"
+  },
+  "homepage": "https://github.com/lahin31/debugcontext#readme",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

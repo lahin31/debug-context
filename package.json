@@ -25,6 +25,6 @@
   "author": "DebugContext Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/debugcontext/debugcontext"
+    "url": "git+https://github.com/lahin31/debugcontext.git"
   }
 }

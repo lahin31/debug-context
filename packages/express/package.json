@@ -1,22 +1,36 @@
 {
   "name": "@lahin31/debugcontext-express",
   "version": "0.1.0",
-  "description": "Express.js adapter for DebugContext — automatic error capture middleware",
+  "description": "Express.js adapter for DebugContext — automatically captures request context, redacts sensitive data, and structures every route error as a debuggable Incident.",
   "keywords": [
     "debugcontext",
     "express",
-    "middleware",
+    "express-middleware",
     "error-handling",
     "debugging",
-    "typescript"
+    "typescript",
+    "nodejs",
+    "sdk",
+    "incident",
+    "zero-config",
+    "developer-tools",
+    "request-context",
+    "error-middleware"
   ],
-  "author": "DebugContext Contributors",
+  "author": {
+    "name": "lahin31",
+    "url": "https://github.com/lahin31"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/debugcontext/debugcontext",
+    "url": "git+https://github.com/lahin31/debugcontext.git",
     "directory": "packages/express"
   },
+  "bugs": {
+    "url": "https://github.com/lahin31/debugcontext/issues"
+  },
+  "homepage": "https://github.com/lahin31/debugcontext#readme",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -47,7 +61,7 @@
     "clean": "rm -rf dist coverage"
   },
   "dependencies": {
-    "@lahin31/debugcontext-core": "*"
+    "@lahin31/debugcontext-core": "^0.1.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0"
